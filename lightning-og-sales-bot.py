@@ -25,7 +25,7 @@ df['date'] = df['blockTime'].apply(lambda x: datetime.fromtimestamp(x))
 
 
 # Limit to purchases only within the last hour
-df_sales_last_hour = df[(df['type'] == 'buyNow') & (df['date'] >= datetime.now() - timedelta(hours=1))]
+df_sales_last_hour = df[(df['type'] == 'buyNow') & (df['date'] > datetime.now() - timedelta(minutes=5))]
 
 
 if df_sales_last_hour.empty:
