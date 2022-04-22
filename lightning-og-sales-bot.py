@@ -50,7 +50,6 @@ else:
         embed.add_embed_field(name='Time', value="{} UTC".format(log['date'].strftime('%Y-%m-%d %H:%M:%S')), inline=False)
         embed.add_embed_field(name='Buyer', value=log['buyer'], inline=False)
         embed.add_embed_field(name='Seller', value=log['seller'],inline=False)
-        embed.add_embed_field(name='Token Mint', value=log['tokenMint'],inline=False)
         embed.add_embed_field(name='Price', value="{} SOL".format(log['price']),inline=False)
 
         # add embed object to webhook
