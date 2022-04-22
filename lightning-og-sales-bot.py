@@ -29,7 +29,7 @@ df_sales_last_hour = df[(df['type'] == 'buyNow') & (df['date'] > datetime.now() 
 
 
 if df_sales_last_hour.empty:
-    print(datetime.now(), 'No Lightning OGs have been sold in the last hour...')
+    print(datetime.now(), 'No Lightning OGs have been sold in the last five mintues...')
     pass
 
 else:
