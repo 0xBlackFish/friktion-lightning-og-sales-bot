@@ -6,8 +6,7 @@ import os
 
 
 # read webhook url from the environment
-#webhook_url = os.getenv('DISCORD_WEBHOOK_LOG')
-webhook_url = 'https://discord.com/api/webhooks/966576493499146281/cSEb7JTmTOjJf9CTRVwuAJQ6z1lKP1eQHWUf0N3LkypfbghjDLuJ3UCTU-kOJW3iqlVa'
+webhook_url = os.getenv('DISCORD_WEBHOOK_LOG')
 
 
 # read-in transaction data from magic eden
